@@ -1,5 +1,6 @@
 FROM registry.redhat.io/redhat-sso-7/sso73-openshift:1.0
 
+RUN mkdir /opt/eap/extensions
 COPY extensions/postconfigure.sh /opt/eap/extensions/
 COPY extensions/actions.cli /opt/eap/extensions/
 
